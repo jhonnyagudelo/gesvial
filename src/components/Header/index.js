@@ -1,1 +1,1 @@
-export * from './Header';npm install eslint - config - airbnb
+export * from './Header';

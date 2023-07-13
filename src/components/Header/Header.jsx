@@ -1,5 +1,12 @@
 import React from 'react';
+import { NavMenu } from '../NavMenu/NavMenu';
 
 export const Header = () => {
-  return <div>Header</div>;
+  return (
+    <>
+      <header>
+        <NavMenu />
+      </header>
+    </>
+  );
 };

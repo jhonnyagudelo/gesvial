@@ -1,14 +1,17 @@
 import React from 'react';
 import { SubNavData } from '../SubNavData';
+import { NavIcon, NavSection, NavUl } from './styled-component';
 
 export const NavMenu = () => {
   return (
-    <ul>
-      {SubNavData.map((item) => (
-        <li key={item?.id}>
-          <a href={item?.path}>{item?.title}</a>
-        </li>
-      ))}
-    </ul>
+    <NavSection>
+      <NavUl>
+        {SubNavData.map((item) => (
+          <li key={item?.id}>
+            <NavIcon to={item?.path}>{item?.title}</NavIcon>
+          </li>
+        ))}
+      </NavUl>
+    </NavSection>
   );
 };

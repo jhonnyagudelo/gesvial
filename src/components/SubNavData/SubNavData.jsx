@@ -7,21 +7,21 @@ export const SubNavData = [
   {
     id: 2,
     title: 'Sobre Nosotros',
-    path: '#',
+    path: '/AboutUs',
   },
   {
     id: 3,
     title: 'Servicos',
-    path: '#',
+    path: 'Service',
   },
   {
     id: 4,
     title: 'Equipo Gesvial',
-    path: '#',
+    path: 'Team',
   },
   {
     id: 5,
     title: 'Contacto',
-    path: '#',
+    path: 'Contact',
   },
 ];

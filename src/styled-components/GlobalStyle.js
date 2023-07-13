@@ -1,5 +1,5 @@
-import { createGlobalStyle} from 'styled-components';
-const GlobalStyle = createGlobalStyle `
+import { createGlobalStyle } from 'styled-components';
+export const GlobalStyle = createGlobalStyle`
 :root {
 --dorado :#ffaa20;
 --naranja: #ff8528;
@@ -32,4 +32,4 @@ height:100%;
   ul { list-style: none; }
   button { background: transparent; border: 0; outline: 0 }
 
-`
+`;
