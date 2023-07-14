@@ -3,7 +3,7 @@ export const GlobalStyle = createGlobalStyle`
 :root {
 --dorado :#ffaa20;
 --naranja: #ff8528;
---gris: #282829;
+--gris: #3B3B3B;
 --negro: #000000;
 --plata1:#f9f9f9;
 --plata2: #eaecf0;
@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body {
 height:100%;
+background-color:var(--plata1)
 }
 
   ul, li, h1, h2, h3, p, button { margin: 0; padding: 0; }
