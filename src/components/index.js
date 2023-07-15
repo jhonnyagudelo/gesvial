@@ -12,5 +12,8 @@ export * from './NavMenu/styled-component';
 export * from './NoFound';
 export * from './Preloader';
 export * from './Scrollbar';
+export * from './Scrollbar/styled-component';
 export * from './SubNavData';
+export * from './TestimonialCarousel';
+export * from './TestimonialCarousel/styled-component';
 export * from './Unauthorized';
