@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   NavigationDot,
   TestimonialAuthor,
@@ -9,10 +9,6 @@ import {
 } from './styled-component';
 export const TestimonialCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
-  };
 
   const testimonials = [
     {
@@ -66,6 +62,20 @@ export const TestimonialCarousel = () => {
       author: 'Sofía Ramírez',
     },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Calculamos el próximo índice activo, haciendo que vuelva a 0 si llega al final.
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000);
+
+    // Limpiamos el intervalo cuando el componente se desmonta para evitar fugas de memoria.
+    return () => clearInterval(interval);
+  }, [testimonials.length]); // Aseguramos que el efecto se ejecute nuevamente si cambia el número de testimonios.
+
+  const handleDotClick = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
     <TestimonialCarouselContainer>
