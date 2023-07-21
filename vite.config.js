@@ -15,6 +15,7 @@ function getAliases() {
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
   const port = 3006;
+
   if (command === 'serve' && mode === 'development') {
     return {
       // dev specific config
@@ -40,6 +41,7 @@ export default defineConfig(({ command, mode }) => {
       }),
       splitVendorChunkPlugin(),
     ],
+    base: 'http:///jhonnyagudelo/gesvial/',
     build: {
       outDir: 'build',
       chunkSizeWarningLimit: 1000,
