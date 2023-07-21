@@ -26,7 +26,6 @@ export default defineConfig(({ command, mode }) => {
       }),
       splitVendorChunkPlugin(),
     ],
-    base: 'https://jhonnyagudelo.github.io/gesvial/',
     build: {
       outDir: 'build',
       chunkSizeWarningLimit: 1000,
