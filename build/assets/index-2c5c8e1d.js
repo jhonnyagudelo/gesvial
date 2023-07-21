@@ -1,4 +1,4 @@
-import{s as e,j as a}from"./vendor-201392fa.js";const n="/assets/equipo-29d32e7c.jpeg",s=e.section`
+import{s as e,j as a}from"./vendor-201392fa.js";const n="https://jhonnyagudelo.github.io/gesvial/assets/equipo-29d32e7c.jpeg",s=e.section`
   display: flex;
   flex-direction: column;
   align-items: center;
